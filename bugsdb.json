@@ -32,6 +32,9 @@
 		 bugs: {opera: ["CORE-37955"], webkit: [], mozilla: [528288] }},
 		{name: "CSS3 backgrounds", 
 		 spec: "http://dev.w3.org/csswg/css3-background/", 
-		 bugs: {opera: ["CORE-16100"], webkit: [27569], mozilla: [631373] }}
+		 bugs: {opera: ["CORE-16100"], webkit: [27569], mozilla: [631373] }},
+		{name: "CSS3 border-image", 
+		 spec: "http://dev.w3.org/csswg/css3-background/#border-images", 
+		 bugs: {opera: ["CORE-14368"], webkit: [27570], mozilla: [497995] }}
 		]
 }
