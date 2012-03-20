@@ -20,6 +20,10 @@
 		 bugs: {opera: ["CORE-44964"], webkit: [75762], mozilla: [633602] }},
 		{name: "DeviceOrientation Event", 
 		 spec: "http://dev.w3.org/geo/api/spec-source-orientation.html", 
-		 bugs: {opera: ["CORE-32293"], webkit: [39210], mozilla: [615597] }}
+		 bugs: {opera: ["CORE-32293"], webkit: [39210], mozilla: [615597] }},
+		{name: "High Resolution Time", 
+		 spec: "http://dvcs.w3.org/hg/webperf/raw-file/tip/specs/HighResolutionTime/Overview.html", 
+		 bugs: {opera: ["CORE-45229"], webkit: [], mozilla: [539095] }}
+
 		]
 }
