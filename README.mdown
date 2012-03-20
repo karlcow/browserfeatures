@@ -22,9 +22,12 @@ Each feature is described by an object with
 * the link to the spec
 * the list of bugs for each browser
 
+Which gives 
+
 	{name: "Gamepad API", 
 	 spec: "https://dvcs.w3.org/hg/gamepad/raw-file/default/gamepad.html", 
 	 bugs: {opera: ["CORE-45220"], webkit: [69451], mozilla: [690935] }}
+
 
 The bugs for each browser vendor is an array in the case, where they would be more than one meaningful number for the technology. If there is a meta-bug for the technology, please prefer this one.
 
