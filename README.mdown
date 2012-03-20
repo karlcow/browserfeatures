@@ -47,4 +47,4 @@ For resolving webkit and mozilla bugs to their URI, you just need to extract the
 
 ## Acknowledgements
 
-Thanks @miketaylr, @tagawa for helping to organize the information.
+Thanks [@miketaylr](https://github.com/miketaylr), [@tagawa](https://github.com/tagawa) for helping to organize the information.
