@@ -26,7 +26,9 @@
 		 bugs: {opera: ["CORE-45229"], webkit: [], mozilla: [539095] }},
 		{name: "Navigation Timing", 
 		 spec: "http://dvcs.w3.org/hg/webperf/raw-file/tip/specs/NavigationTiming/Overview.html", 
-		 bugs: {opera: ["CORE-32197"], webkit: [30685], mozilla: [554045] }}
-
+		 bugs: {opera: ["CORE-32197"], webkit: [30685], mozilla: [554045] }},
+		{name: "SPDY Protocol", 
+		 spec: "http://tools.ietf.org/html/draft-mbelshe-httpbis-spdy", 
+		 bugs: {opera: ["CORE-37955"], webkit: [], mozilla: [528288] }}
 		]
 }
