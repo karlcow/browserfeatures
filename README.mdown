@@ -1,0 +1,47 @@
+# bug references across browsers
+
+Because I was tired of always trying to find which bug from [Mozilla](https://bugzilla.mozilla.org/), [Webkit](https://bugs.webkit.org/) and [Opera](https://bugs.opera.com/) are tied together. 
+
+This is mainly to associate bugs for Open Web Technologies. It is not meant to cover everything in life. It is a very simple and dumb system. The bugs are contained in a very simple JSON file.
+
+Everyone is welcome to contribute.
+
+## JSON file format for the bugs
+
+You can do pull requests for the bugs. The general JSON file is a list of features. So far, it tries to cover only the things that you would find in sites such as [caniuse.com](http://caniuse.com/)
+
+	{
+		features: [
+			…
+			]
+	}
+
+Each feature is described by an object with
+
+* the name of the feature
+* the link to the spec
+* the list of bugs for each browser
+
+	{name: "Gamepad API", 
+	 spec: "https://dvcs.w3.org/hg/gamepad/raw-file/default/gamepad.html", 
+	 bugs: {opera: ["CORE-45220"], webkit: [69451], mozilla: [690935] }}
+
+The bugs for each browser vendor is an array in the case, where they would be more than one meaningful number for the technology. If there is a meta-bug for the technology, please prefer this one.
+
+For resolving webkit and mozilla bugs to their URI, you just need to extract the value(s) from the JSON DB
+
+	var webkitval = features[0]["webkit"][0]
+	"https://bugs.webkit.org/show_bug.cgi?id="+webkitval
+	
+	var mozval = features[0]["mozilla"][0]
+	"https://bugzilla.mozilla.org/show_bug.cgi?id="+mozval
+
+## Notes
+
+* **Microsoft**: We do not have access to the microsoft bug numbers. They are welcome, as anyone, to do pull requests to update the list.
+* **Opera**: Opera doesn't have an open bug tracker. They are considering it. There is no release date yet.
+* You are free to build your own UI with these data.
+
+## Acknowledgements
+
+Thanks @miketaylr, @tagawa for helping to organize the information.
