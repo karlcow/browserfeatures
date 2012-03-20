@@ -14,7 +14,7 @@
 		 bugs: {opera: ["CORE-25215"], webkit: [60731], mozilla: [616605] }},
 		{name: "MediaStream Processing API", 
 		 spec: "https://dvcs.w3.org/hg/audio/raw-file/tip/streams/StreamProcessing.html", 
-		 bugs: {opera: ["CORE-33957"], webkit: [56459], mozilla: [616605] }}
-		 
+		 bugs: {opera: ["CORE-33957"], webkit: [56459], mozilla: [] }},
+
 		]
 }
