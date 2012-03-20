@@ -15,6 +15,9 @@
 		{name: "MediaStream Processing API", 
 		 spec: "https://dvcs.w3.org/hg/audio/raw-file/tip/streams/StreamProcessing.html", 
 		 bugs: {opera: ["CORE-33957"], webkit: [56459], mozilla: [] }},
+		{name: "Pointer Lock", 
+		 spec: "http://dvcs.w3.org/hg/pointerlock/raw-file/default/index.html", 
+		 bugs: {opera: ["CORE-44964"], webkit: [75762], mozilla: [633602] }},
 
 		]
 }
