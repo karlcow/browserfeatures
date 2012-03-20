@@ -1,0 +1,20 @@
+{
+	features: [
+		{name: "Gamepad API", 
+		 spec: "https://dvcs.w3.org/hg/gamepad/raw-file/default/gamepad.html", 
+		 bugs: {opera: ["CORE-45220"], webkit: [69451], mozilla: [690935] }},
+		{name: "Screen Orientation API", 
+		 spec: "http://dvcs.w3.org/hg/screen-orientation/raw-file/tip/Overview.html", 
+		 bugs: {opera: ["CORE-45225"], webkit: [29508], mozilla: [673922] }},
+		{name: "matchMedia", 
+		 spec: "http://www.w3.org/TR/cssom-view/#dom-window-matchmedia", 
+		 bugs: {opera: ["CORE-31401"], webkit: [37205], mozilla: [542058] }},
+		{name: "CSS Grids", 
+		 spec: "http://dev.w3.org/csswg/css3-grid-align/", 
+		 bugs: {opera: ["CORE-25215"], webkit: [60731], mozilla: [616605] }},
+		{name: "MediaStream Processing API", 
+		 spec: "https://dvcs.w3.org/hg/audio/raw-file/tip/streams/StreamProcessing.html", 
+		 bugs: {opera: ["CORE-33957"], webkit: [56459], mozilla: [616605] }}
+		 
+		]
+}
