@@ -23,7 +23,10 @@
 		 bugs: {opera: ["CORE-32293"], webkit: [39210], mozilla: [615597] }},
 		{name: "High Resolution Time", 
 		 spec: "http://dvcs.w3.org/hg/webperf/raw-file/tip/specs/HighResolutionTime/Overview.html", 
-		 bugs: {opera: ["CORE-45229"], webkit: [], mozilla: [539095] }}
+		 bugs: {opera: ["CORE-45229"], webkit: [], mozilla: [539095] }},
+		{name: "Navigation Timing", 
+		 spec: "http://dvcs.w3.org/hg/webperf/raw-file/tip/specs/NavigationTiming/Overview.html", 
+		 bugs: {opera: ["CORE-32197"], webkit: [30685], mozilla: [554045] }}
 
 		]
 }
