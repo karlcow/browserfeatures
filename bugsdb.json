@@ -38,6 +38,6 @@
 		 bugs: {opera: ["CORE-14368"], webkit: [27570], mozilla: [497995] }},
 		{name: "CSS3 tab-size",
 		 spec: "http://www.w3.org/TR/css3-text/#tab-size0",
-		 bugs: {webkit: [52994], mozilla: [517882, 737785] }}
+		 bugs: {opera: ["CORE-12826"], webkit: [52994], mozilla: [517882, 737785] }}
 		]
 }
