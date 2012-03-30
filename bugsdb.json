@@ -39,5 +39,8 @@
 		{name: "CSS3 tab-size",
 		 spec: "http://www.w3.org/TR/css3-text/#tab-size0",
 		 bugs: {opera: ["CORE-12826"], webkit: [52994], mozilla: [517882, 737785] }}
+		{name: "CSS3 calc()",
+		 spec: "http://www.w3.org/TR/css3-values/#calc",
+		 bugs: {opera: ["CORE-22885"], webkit: [16662], mozilla: [363249] }}
 		]
 }
