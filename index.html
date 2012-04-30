@@ -1,0 +1,98 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Browser features</title>
+<style>
+table {
+    border-collapse: collapse;
+}
+td, th {
+    border: 1px solid;
+}
+tbody th {
+    text-align: left;
+}
+</style>
+
+<p id="nojs">This page needs JavaScript. If you can't enable it, you can view the <a href="bugsdb.json">data source file</a>.</p>
+
+<script>
+(function () {
+
+var bugtrackers = {
+    "mozilla": "https://bugzilla.mozilla.org/show_bug.cgi?id=",
+    "opera": "#/dev/null/",
+    "webkit": "https://bugs.webkit.org/show_bug.cgi?id="
+}
+
+function init() {
+    var req = new XMLHttpRequest();
+    req.open('GET', 'bugsdb.json', true);
+    req.onload = build.bind(undefined, req);
+    req.send(null);
+}
+
+function build(req) {
+    var features = JSON.parse(req.response);
+
+    var ret = createTable();
+    var table = ret.table;
+    var tbody = ret.tbody;
+
+    features.forEach(addRow.bind(undefined, tbody));
+
+    var nojs = document.getElementById('nojs');
+    nojs.parentNode.removeChild(nojs);
+
+    document.body.appendChild(table);
+}
+
+function createTable() {
+    var table = document.createElement('table');
+    var thead = table.createTHead();
+
+    var head_row = thead.insertRow(-1);
+    head_row.innerHTML = "<th>Feature</th><th>Mozilla</th><th>Opera</th><th>WebKit</th>"; 
+
+    var tbody = document.createElement('tbody');
+    table.appendChild(tbody);
+
+    return {table: table, tbody: tbody};
+}
+
+function addRow(table, feature) {
+    var row = document.createElement('tr');
+
+    var a = document.createElement('a');
+    a.href = feature.spec;
+    a.appendChild(document.createTextNode(feature.name));
+
+    var th = document.createElement('th');
+    th.appendChild(a);
+
+    row.appendChild(th);
+
+    addEngine(row, "mozilla", feature.bugs);
+    addEngine(row, "opera", feature.bugs);
+    addEngine(row, "webkit", feature.bugs);
+
+    table.appendChild(row);
+}
+
+function addEngine(row, engine, bugs) {
+    var td = row.insertCell(-1);
+
+    bugs[engine].forEach(addBug.bind(undefined, td, engine));
+}
+
+function addBug(td, engine, bug) {
+    var a = document.createElement('a');
+    a.href = bugtrackers[engine] + bug;
+    a.appendChild(document.createTextNode(bug))
+    td.appendChild(a);
+
+    td.appendChild(document.createTextNode(" "));
+}
+
+init();
+})();
+</script>

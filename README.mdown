@@ -10,12 +10,6 @@ Everyone is welcome to contribute.
 
 You can do pull requests for the bugs. The general JSON file is a list of features. So far, it tries to cover only the things that you would find in sites such as [caniuse.com](http://caniuse.com/)
 
-	{
-		features: [
-			…
-			]
-	}
-
 Each feature is described by an object with
 
 * the name of the feature
@@ -43,7 +37,7 @@ For resolving webkit and mozilla bugs to their URI, you just need to extract the
 
 * **Microsoft**: We do not have access to the microsoft bug numbers. They are welcome, as anyone, to do pull requests to update the list.
 * **Opera**: Opera doesn't have an open bug tracker. They are considering it. There is no release date yet.
-* You are free to build your own UI with these data.
+* A UI is available at http://rik.github.com/browserfeatures/
 
 ## Acknowledgements
 
