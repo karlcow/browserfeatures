@@ -43,7 +43,7 @@
 	 "bugs": {"opera": ["CORE-22885"], "webkit": [16662], "mozilla": [363249] }},
 	{"name": "CSS Variables",
 	 "spec": "http://dev.w3.org/csswg/css-variables/",
-	 "bugs": {"opera": ["CORE-42549"], "webkit": [46594], "mozilla": [442864] }}
+	 "bugs": {"opera": ["CORE-42549"], "webkit": [46594], "mozilla": [442864] }},
 	{"name": "Battery Status API",
 	 "spec": "http://dvcs.w3.org/hg/dap/raw-file/tip/battery/Overview.html",
 	 "bugs": {"opera": ["CORE-47327"], "webkit": [89558], "mozilla": [696045] }}
