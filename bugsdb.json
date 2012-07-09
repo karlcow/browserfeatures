@@ -46,5 +46,8 @@
 	 "bugs": {"opera": ["CORE-42549"], "webkit": [46594], "mozilla": [442864] }},
 	{"name": "Battery Status API",
 	 "spec": "http://dvcs.w3.org/hg/dap/raw-file/tip/battery/Overview.html",
-	 "bugs": {"opera": ["CORE-47327"], "webkit": [89558], "mozilla": [696045] }}
+	 "bugs": {"opera": ["CORE-47327"], "webkit": [89558], "mozilla": [696045] }},
+	{"name": "CSS 3D Transform",
+	 "spec": "http://dev.w3.org/csswg/css3-transforms/",
+	 "bugs": {"opera": ["CORE-27381"], "webkit": [70025], "mozilla": [505115] }}
 ]
