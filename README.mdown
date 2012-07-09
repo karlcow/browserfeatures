@@ -1,6 +1,6 @@
-# bug references across browsers
+# Bug references across browsers
 
-Because I was tired of always trying to find which bug from [Mozilla](https://bugzilla.mozilla.org/), [Webkit](https://bugs.webkit.org/) and [Opera](https://bugs.opera.com/) are tied together. 
+Because I was tired of always trying to find which bug from [Mozilla](https://bugzilla.mozilla.org/), [WebKit](https://bugs.webkit.org/) and [Opera](https://bugs.opera.com/) are tied together. 
 
 This is mainly to associate bugs for Open Web Technologies. It is not meant to cover everything in life. It is a very simple and dumb system. The bugs are contained in a very simple JSON file.
 
@@ -25,12 +25,12 @@ Which gives
 
 The bugs for each browser vendor is an array in the case, where they would be more than one meaningful number for the technology. If there is a meta-bug for the technology, please prefer this one.
 
-For resolving webkit and mozilla bugs to their URI, you just need to extract the value(s) from the JSON DB
+For resolving WebKit and Mozilla bugs to their URI, you just need to extract the value(s) from the JSON DB:
 
-	var webkitval = features[0]["webkit"][0]
+	var webkitval = features[0].webkit[0]
 	"https://bugs.webkit.org/show_bug.cgi?id="+webkitval
 	
-	var mozval = features[0]["mozilla"][0]
+	var mozval = features[0].mozilla[0]
 	"https://bugzilla.mozilla.org/show_bug.cgi?id="+mozval
 
 ## Notes
