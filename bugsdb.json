@@ -52,5 +52,5 @@
 	 "bugs": {"opera": ["CORE-27381"], "webkit": [70025], "mozilla": [505115] }},
 	{"name": "CSS Resolution units",
 	 "spec": "http://www.w3.org/TR/css3-images/#resolution-units",
-	 "bugs": {"opera": [], "webkit": [85332], "mozilla": [741644]}}
+	 "bugs": {"opera": ["CORE-21899"], "webkit": [85332], "mozilla": [741644]}}
 ]
