@@ -81,6 +81,9 @@ function addRow(table, feature) {
 function addEngine(row, engine, bugs) {
     var td = row.insertCell(-1);
 
+    if (!(engine in bugs)) {
+        return;
+    }
     bugs[engine].forEach(addBug.bind(undefined, td, engine));
 }
 
