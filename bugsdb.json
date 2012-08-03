@@ -61,5 +61,8 @@
 	 "bugs": {"opera": ["CORE-47450", "CORE-47451"]}},
 	{"name": "Visibility API",
 	 "spec": "http://dvcs.w3.org/hg/webperf/raw-file/tip/specs/PageVisibility/Overview.html",
-	 "bugs": {"opera": ["CORE-39021", "CORE-46650"]}}
+	 "bugs": {"opera": ["CORE-39021", "CORE-46650"]}},
+	{"name": "Mutation Observers", 
+	 "spec": "http://www.w3.org/TR/dom/#mutation-observers", 
+	 "bugs": {"opera": ["CORE-44897"], "webkit": [68729], "mozilla": [641821,749920]}}
 ]
