@@ -64,5 +64,8 @@
 	 "bugs": {"opera": ["CORE-39021", "CORE-46650"], "webkit": [54181], "mozilla": [690056]}},
 	{"name": "Mutation Observers", 
 	 "spec": "http://www.w3.org/TR/dom/#mutation-observers", 
-	 "bugs": {"opera": ["CORE-44897"], "webkit": [68729], "mozilla": [641821,749920]}}
+	 "bugs": {"opera": ["CORE-44897"], "webkit": [68729], "mozilla": [641821,749920]}},
+	{"name": "CSS Device Adaptation",
+	 "spec": "http://dev.w3.org/csswg/css-device-adapt/",
+	 "bugs": {"webkit": [95959], "mozilla": [747754]}}
 ]
