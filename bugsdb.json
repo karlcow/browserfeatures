@@ -90,5 +90,9 @@
 	{"name": "CSS Device Adaptation",
 	 "spec": "http://www.w3.org/TR/css-device-adapt/",
      "spec-draft": "http://dev.w3.org/csswg/css-device-adapt/",
-	 "bugs": {"webkit": [95959], "mozilla": [747754]}}
+	 "bugs": {"webkit": [95959], "mozilla": [747754]}},
+	{"name": "Fullscreen API",
+	 "spec": "http://www.w3.org/TR/fullscreen/",
+     "spec-draft": "http://dvcs.w3.org/hg/fullscreen/raw-file/tip/Overview.html",
+	 "bugs": {"opera": ["CORE-21846"], "webkit": [85870], "mozilla": [545812] }}
 ]
